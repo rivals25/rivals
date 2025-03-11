@@ -3,81 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RIVALS 2024</title>
+  <title>RIVALS 2025</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      background-color: #1a1a2e;
+      color: #fff;
+      text-align: center;
     }
 
     .header {
-      text-align: center;
+      background: linear-gradient(90deg, #007BFF, #6610f2);
       padding: 20px 0;
-      background-color:blue;
-      color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     h1 {
       margin: 0;
+      font-size: 36px;
+      text-transform: uppercase;
+      animation: slideDown 1.5s ease-in-out;
     }
 
     .content {
-      background-color:; /* Background color for the content area */
-      padding: 20px;
+      padding: 40px 20px;
+      background-color: #16213e;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 30px;
+      animation: popUp 1.5s ease-in-out;
     }
 
     .buttons-container {
-      text-align: center;
       margin-top: 20px;
     }
 
     .button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 25px;
       text-decoration: none;
       color: #fff;
-      background-color: #007BFF;
+      font-size: 18px;
+      font-weight: bold;
       border-radius: 5px;
-      font-size: 16px;
-      margin: 0 10px;
-      cursor: pointer;
+      transition: 0.3s;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .button:nth-child(1) {
+      background: #ff4757;
+    }
+
+    .button:nth-child(2) {
+      background: #ffa502;
     }
 
     .button:hover {
-      background-color: #0056b3;
+      opacity: 0.8;
+      transform: scale(1.05);
     }
 
-    .copyright {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #333;
-      color: #fff;
+    .deadline {
+      font-size: 16px;
+      margin-top: 20px;
+      color: #ff4d4d;
+      font-weight: bold;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .footer {
+      margin-top: 50px;
+      padding: 15px 0;
+      background: #0f3460;
       font-size: 14px;
+      animation: slideUp 1.5s ease-in-out;
     }
 
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes popUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
   </style>
 </head>
 <body>
-
   <div class="header">
-    <h1>RIVALS 2024</h1>
+    <h1>RIVALS 2025</h1>
   </div>
-  <div style="background-color:azure;">
+
   <div class="content">
     <div class="buttons-container">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxpfYZq2v7Ndt_zbU9aLDZc5CBTF7Ozh7NTxpy3Kd26G723A/viewform?usp=sf_link" class="button"> Registration Form</a>
-      <a href="rule.pdf" class="button" download>Rule Book</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUWJamOZ1qa38sRNFJF_kBnw5MYYjQEPZ15U6M-SbVS7Zreg/viewform" class="button">Register Now</a>
+      <a href="rival25-rulebook.pdf" class="button" download>Download Rule Book</a>
     </div>
   </div>
-  <p style="text-align: center; margin-top: 20px; font-size: 14px; color:red;">
-    Last date of registration: March 15, 2024
-  </p>
 
-  <div class="copyright" style="margin-top: 530px;">
-    &copy; 2024 Your Rivals. All rights reserved.
+  <p class="deadline">Last date of registration: March 15, 2025</p>
+
+  <div class="footer">
+    &copy; 2025 RIVALS. All rights reserved.
   </div>
-</div>
 </body>
 </html>
